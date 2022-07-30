@@ -1,0 +1,82 @@
+.modal{
+    position: fixed;
+    z-index: 1;
+	width: 100%;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    clip-path: circle(100% at 50% 50%);
+	transition: clip-path 1s ease-in-out;
+}
+.card{
+    padding: 15px;
+	position: relative;
+	width: 90%;
+	max-width: 300px;
+    min-width: 288px;
+	height: 150px;
+	background-color: white;
+	border-radius: 10px;
+	overflow: hidden;
+	clip-path: circle(100% at 50% 50%);
+	transition: clip-path 1s ease-in-out;
+    
+}
+.card h2{
+    font-size: 2.5rem;
+    padding-bottom: 8px;
+}
+
+.card p{
+    font-size: 1.6rem;
+
+}
+.card button{
+    cursor: pointer;
+    width: 90%;
+    max-width: 50px;
+    margin: 8px auto;
+    display: block;
+    padding: 5;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    height: 30px;
+}
+
+
+
+.noShowModal {
+	clip-path: circle(0% at 50% 50%);
+	transition: clip-path 0.5s ease-in-out;
+} 
+.preloader {
+	position: fixed;
+	width: 70px;
+	height: 70px;
+	border: 10px solid #eee;
+	border-top: 10px solid #666;
+	border-radius: 50%;
+	animation-name: girar;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+  }
+  .display{
+	display: none;
+}
+  @keyframes girar {
+	from {
+	  transform: rotate(0deg);
+	}
+	to {
+	  transform: rotate(360deg);
+	}
+  }
+  

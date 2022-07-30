@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="robots" content="index, follow" />
+		<meta name="description" content="Esta pagina es un portafolio" />
+		<title>Esteban | Portafolio</title>
+		<link rel="stylesheet" href="modal.css" />
+		<link rel="shortcut icon" href="assets/Img/briefcase.svg" type="image/x-icon" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="container__capa">
+				<div class="capa__content">
+					<img src="assets/Img/Profile.jfif" alt="" />
+					<h2>Esteban Molina</h2>
+					<hr class="capa__hr" />
+					<h3>Front-End Developer</h3>
+				</div>
+			</div>
+		</header>
+
+		<nav class="nav">
+			<div class="nav-div">
+				<a href="">
+					<span>
+						Esteban |
+						<small> Front-End Developer </small>
+					</span>
+				</a>
+
+				<ul class="nav-div__items">
+					<li class="nav-div__item">
+						<a href="#Portafolio" class="nav__ancla">Portafolio</a>
+					</li>
+					<li class="nav-div__item">
+						<a href="#skillSet" class="nav__ancla">SKILLSET</a>
+					</li>
+					<li class="nav-div__item">
+						<a href="#Object" class="nav__ancla">About me</a>
+					</li>
+					<li class="nav-div__item">
+						<a href="#Contact-me" class="nav__ancla">Contact</a>
+					</li>
+				</ul>
+
+				<label for="menu" class="nav__label" id="hamburger">
+					<img src="assets/Img/buguerIcon.svg" alt="burguer menu" />
+				</label>
+				<input type="checkbox" class="nav__input" id="menu" />
+
+				<div class="nav__response">
+					<ul class="nav-response__items">
+						<li class="nav-div__item">
+							<a class="li__a" href="#Portafolio">Portafolio</a>
+						</li>
+						<li class="nav-div__item">
+							<a class="li__a" href="#skillSet">SkillSet</a>
+						</li>
+						<li class="nav-div__item">
+							<a class="li__a" href="#Object">About me</a>
+						</li>
+						<li class="nav-div__item">
+							<a class="li__a" href="#Contact-me">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<main>
+			<div class="modal noShowModal">
+				<div class="preloader display"></div>
+				<div class="card noShowModal">
+					<h2></h2>
+					<p></p>
+					<button class="card__button">Ok</button>
+				</div>
+			</div>
+
+			<section class="section" id="Portafolio">
+				<h2>Portafolio</h2>
+
+				<div class="section--container">
+					<div class="container--box">
+						<div class="box__icons">
+							<!-- <a href="https://github.com/NicolasE07/weather-app" target="_blank">
+								<img src="assets/Img/github.svg" title="Repositorio" width="25px" alt="icon github" />
+							</a> -->
+							<a href="https://github.com/NicolasE07/weather-app" target="_blank">
+								<img width="20px" src="assets/Img/link.svg" alt="icon link" />
+							</a>
+						</div>
+						<div class="box__body">
+							<h3>Weather app</h3>
+							<p>
+								This is a project made with the React JS technology proposed by Platzi It is a weather
+								application where it uses the
+								<a href="https://openweathermap.org/api" target="_blank">OpenWeaherMap</a>
+								API
+							</p>
+						</div>
+
+						<div class="box__footer">
+							<img src="assets/Img/react.svg" alt="" />
+							<img src="assets/Img/javascript.svg" alt="" />
+							<img src="assets/Img/css3.svg" alt="" />
+						</div>
+					</div>
+
+					<div class="container--box">
+						<div class="box__icons">
+							<a href="https://github.com/NicolasE07/react-task" target="_blank">
+								<img src="assets/Img/github.svg" title="Repositorio" width="25px" alt="icon github" />
+							</a>
+							<a href="https://nicolase07.github.io/react-task/" target="_blank">
+								<img width="20px" src="assets/Img/link.svg" alt="icon link" />
+							</a>
+						</div>
+						<div class="box__body">
+							<h3>Task App</h3>
+							<p>
+								This project was made with React, it is a task application where the user can create
+								their tasks and mark them as completed and the changes will be saved in the cloud
+							</p>
+						</div>
+
+						<div class="box__footer">
+							<img src="assets/Img/react.svg" alt="" />
+							<img src="assets/Img/javascript.svg" alt="" />
+							<img src="assets/Img/css3.svg" alt="" />
+						</div>
+					</div>
+
+					<div class="container--box">
+						<div class="box__icons">
+							<a href="https://github.com/NicolasE07/Movie-Flix" target="_blank">
+								<img src="assets/Img/github.svg" title="Repositorio" width="25px" alt="icon github" />
+							</a>
+							<a href="https://nicolase07.github.io/Movie-Flix/" target="_blank">
+								<img width="20px" src="assets/Img/link.svg" alt="icon link" />
+							</a>
+						</div>
+						<div class="box__body">
+							<h3>Movie Flix</h3>
+							<p>
+								It is a page of movies and series where you can find out about the latest releases and
+								the most popular. This project consumes the
+								<a href="https://www.themoviedb.org/" target="_blank">TMDB</a>
+								API
+							</p>
+						</div>
+
+						<div class="box__footer">
+							<img src="assets/Img/html.svg" alt="" />
+							<img src="assets/Img/css3.svg" alt="" />
+							<img src="assets/Img/javascript.svg" alt="" />
+						</div>
+					</div>
+
+					<div class="container--box">
+						<div class="box__icons">
+							<a href="https://github.com/NicolasE07/wordle_Clon" target="_blank">
+								<img src="assets/Img/github.svg" title="Repositorio" width="25px" alt="icon github" />
+							</a>
+							<a href="https://nicolase07.github.io/wordle_Clon/" target="_blank">
+								<img width="20px" src="assets/Img/link.svg" alt="icon link" />
+							</a>
+						</div>
+						<div class="box__body">
+							<h3>Wordle Clon</h3>
+							<p>
+								It is a clone of the famous
+								<a href="https://wordle.danielfrg.com/" target="_blank">Wordle</a>
+								game where you have to guess the word in 6 attempts. This project uses the
+								<a href="https://palabras-aleatorias-public-api.herokuapp.com/" target="_blank"
+									>Palabras Random</a
+								>
+								API
+							</p>
+						</div>
+
+						<div class="box__footer">
+							<img src="assets/Img/html.svg" alt="" />
+							<img src="assets/Img/css3.svg" alt="" />
+							<img src="assets/Img/javascript.svg" alt="" />
+						</div>
+					</div>
+
+					<div class="container--box">
+						<div class="box__icons">
+							<a href="https://github.com/NicolasE07/Twitther-_Clon" target="_blank">
+								<img src="assets/Img/github.svg" title="Repositorio" width="25px" alt="icon github" />
+							</a>
+							<a href="https://nicolase07.github.io/Twitther-_Clon/" target="_blank">
+								<img width="20px" src="assets/Img/link.svg" alt="icon link" />
+							</a>
+						</div>
+						<div class="box__body">
+							<h3>Twitter Clon</h3>
+							<p>It's about a Twitter clone where I show my HTML layout skills and my CSS skills</p>
+						</div>
+
+						<div class="box__footer">
+							<img src="assets/Img/html.svg" alt="" />
+							<img src="assets/Img/css3.svg" alt="" />
+						</div>
+					</div>
+
+					<div class="container--box">
+						<div class="box__icons">
+							<a href="https://github.com/NicolasE07/proyecto-Platzi" target="_blank">
+								<img src="assets/Img/github.svg" title="Repositorio" width="25px" alt="icon github" />
+							</a>
+							<a href="https://nicolase07.github.io/proyecto-Platzi/" target="_blank">
+								<img width="20px" src="assets/Img/link.svg" alt="icon link" />
+							</a>
+						</div>
+						<div class="box__body">
+							<h3>Platzi Project</h3>
+							<p>
+								It's a set of several pages where I show my skills with basic JavaScript, from how to
+								calculate the area of ​​a circle to salary analysis.
+							</p>
+						</div>
+
+						<div class="box__footer">
+							<img src="assets/Img/html.svg" alt="" />
+							<img src="assets/Img/css3.svg" alt="" />
+							<img src="assets/Img/javascript.svg" alt="" />
+						</div>
+					</div>
+
+					<div class="container--box">
+						<div class="box__icons">
+							<a href="https://github.com/NicolasE07/chronometer_Timer" target="_blank">
+								<img src="assets/Img/github.svg" title="Repositorio" width="25px" alt="icon github" />
+							</a>
+							<a href="https://nicolase07.github.io/chronometer_Timer/" target="_blank">
+								<img width="20px" src="assets/Img/link.svg" alt="icon link" />
+							</a>
+						</div>
+						<div class="box__body">
+							<h3>Chronometer</h3>
+							<p>
+								This was my first JavaScript project where I learned to make a fully functional stopwatch
+								and timer.
+							</p>
+						</div>
+
+						<div class="box__footer">
+							<img src="assets/Img/html.svg" alt="" />
+							<img src="assets/Img/css3.svg" alt="" />
+							<img src="assets/Img/javascript.svg" alt="" />
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section-skillSet" id="skillSet">
+				<h2>SKILLSET</h2>
+				<div class="section-skillSet__container">
+					<div>
+						<img src="assets/Img/html.svg" alt="html" />
+						<span>HTML</span>
+					</div>
+					<div>
+						<img src="assets/Img/css3.svg" alt="css" />
+						<span>CSS</span>
+					</div>
+					<div>
+						<img src="assets/Img/javascript.svg" alt="JavaScript" />
+						<span>JavaScript</span>
+					</div>
+					<div>
+						<img src="assets/Img/git.svg" alt="git" />
+						<span>GIT</span>
+					</div>
+					<div>
+						<img src="assets/Img/react.svg" alt="react js" />
+						<span>REACT</span>
+					</div>
+					<div>
+						<img src="assets/Img/node-js.svg" alt="node js" />
+						<span>NODE JS</span>
+					</div>
+				</div>
+				<hr />
+			</section>
+
+			<section class="section-Object" id="Object">
+				<div class="container-Object">
+					<div class="container-img">
+						<img src="assets/Img/job.jpg" alt="computer job" />
+					</div>
+					<div class="container-text">
+						<h3>About me</h3>
+						<p>
+							I am a 19-year-old boy who is passionate about technology and I like to create and design dynamic web pages. I have several goals in mind, one of them is to be able to find my first job as a frontend developer and thus be able to grow professionally and learn more about this wonderful world of technology every day.
+						</p>
+						<div class="container-a">
+							<a class="container-a__color" href="#Contact-me">Contact-me</a>
+							<!-- |
+							<a href="">Acerca de mi</a> -->
+						</div>
+					</div>
+					<div></div>
+				</div>
+			</section>
+
+			<section class="section-contact" id="Contact-me">
+				<h2>Contact Me</h2>
+				<div class="container__form">
+					<form class="form">
+						<label for="name">Name</label>
+						<input class="form__input" required type="text" id="name" name="name" placeholder="Name" />
+						<label for="email">Email</label>
+						<input
+							class="form__input"
+							required
+							type="email"
+							name="email"
+							id="email"
+							placeholder="esteban@ejemplo.com"
+						/>
+						<label for="message">Message</label>
+						<textarea
+							class="form__input textarea"
+							required
+							name="message"
+							id="message"
+							cols="30"
+							rows="10"
+							placeholder="Write a message..."
+						></textarea>
+						<button type="submit">Send</button>
+					</form>
+					<div class="container__social-networks">
+						<a href="https://www.instagram.com/enmp_.x/" target="_blank">
+							<img src="assets/Img/instagram.svg" alt="instagram icon" />
+						</a>
+						<a href="https://www.linkedin.com/in/esteban-molina-611651212/" target="_blank">
+							<img src="assets/Img/linkedin.svg" alt="linkedin icon" />
+						</a>
+						<a href="https://github.com/NicolasE07" target="_blank">
+							<img src="assets/Img/github_icon.svg" alt="github icon" />
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<div class="container__fixed">
+				<div class="circle">
+					<a href="assets/Esteban_curriculum.pdf" download="Esteban_curriculum">CV</a>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<h5>Developed and designed by Esteban Molina. ©2021. All rights reserved.</h5>
+		</footer>
+
+		<script src="form.js"></script>
+		<script src="index.js"></script>
+	</body>
+</html>
